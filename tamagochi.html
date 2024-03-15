@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokoGochi</title>
+    <link rel="stylesheet" href="tamagochi.css">
+    <script src="tamagochi.js"></script>
+</head>
+<body>   
+    <table id="tabla">
+        <tr>
+            <td>
+                <div class="estadosContenedor">
+                    <p>HAMBRE</p>
+                    <div id="barraEstado" class="estado">
+                        <div class="relleno" id="rellenoHambre" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="estadosContenedor">
+                    <p>HIGIENE</p>
+                    <div id="barraEstado" class="estado">
+                        <div class="relleno" id="rellenoHigiene" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="estadosContenedor">
+                    <p>BAÑO</p>
+                    <div id="barraEstado" class="estado">
+                        <div class="relleno" id="rellenoBaño" style="width: 100%;"></div>
+                    </div>
+                </div>           
+            </td>
+            <td>
+                <div class="estadosContenedor">
+                    <p>ABURRIMIENTO</p>
+                    <div id="barraEstado" class="estado">
+                        <div class="relleno" id="rellenoAburrimiento" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <img class="foto" src="imagenes/chermander.png" alt="Tamagochi">
+    </div>
+    <div class="botones">
+        <button class="boton" id="comida">Comida</button>
+        <button class="boton" id="ducha">Ducha</button>
+        <button class="boton" id="retrete">Retrete</button>
+        <button class="boton" id="jugar">Jugar</button>
+    </div>
+</body>
+</html>

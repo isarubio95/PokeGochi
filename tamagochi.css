@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Asegura que el texto también esté centrado, si es necesario */
+}
+
+.boton {
+    width: 120px;
+    height: 55px;
+    margin: 25px;
+    font-size: medium;
+}
+
+.estadosContenedor {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: left;
+    margin: 10px;
+    width: auto;
+    height: 50px;
+    background-color: #febbc8;
+    
+    padding: 10px;
+    border-radius: 5px;  
+}
+
+.estado {
+    height: 20px;
+    width: 200px; /* Ancho fijo */
+    margin-left: 40px;
+    background-color: #ddd; /* Color de fondo para simular el borde vacío */
+    border: 2px solid rgb(255, 255, 255);
+    position: relative; /* Para posicionar el relleno absolutamente dentro */
+}
+
+.relleno {
+    height: 100%;
+    background-color: #4170ff; /* Color del relleno */
+    position: absolute;
+    left: 0; /* Alinea el relleno a la derecha */
+}
+
+.foto {
+    margin: 30px;
+    width: 400px;
+    height: auto;
+}
+
+p {
+    font-weight: bold;
+}
