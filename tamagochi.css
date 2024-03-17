@@ -7,19 +7,34 @@ body {
     height: auto;
     width: auto;
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: row;
     background-color: azure;
     margin-top: 40px;
     justify-content: center;
-    align-items: center;
-    text-align: center; /* Asegura que el texto también esté centrado, si es necesario */
+    text-align: center; /* Asegura que el texto también esté centrado*/
 }
 
 .boton {
-    width: 120px;
-    height: 55px;
-    margin: 25px;
-    font-size: medium;
+    width: 120px; /* Ancho del botón */
+    height: 55px; /* Alto del botón */ 
+    margin: 25px; /* Margen alrededor del botón */
+    font-size: large; /* Tamaño del texto */
+    background-color: #ffffff; /* Color de fondo */
+    color: #ff0000; /* Color del texto */
+    border: 2px solid rgb(0, 0, 0); /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+.boton:hover {
+    background-color: #edf3ef; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.boton:active {
+    background-color: #FFFECB; /* Cambia el color de fondo al hacer clic */
+    transform: translateY(2px); /* Mueve el botón ligeramente hacia abajo al hacer clic */
 }
 
 .estadosContenedor {
@@ -27,12 +42,11 @@ body {
     justify-content: flex-end;
     align-items: center;
     text-align: left;
-    margin: 10px;
+    margin: 5px;
     width: auto;
     height: 50px;
-    background-color: #febbc8;
-    
-    padding: 10px;
+    background-color: #4c4c4c;
+    padding: 15px;
     border-radius: 5px;  
 }
 
@@ -47,7 +61,7 @@ body {
 
 .relleno {
     height: 100%;
-    background-color: #4170ff; /* Color del relleno */
+    background-color: #5cb8b5; /* Color del relleno */
     position: absolute;
     left: 0; /* Alinea el relleno a la derecha */
 }
@@ -58,6 +72,51 @@ body {
     height: auto;
 }
 
-p {
-    font-weight: bold;
+p { 
+    color:rgb(255, 255, 255);
 }
+
+.panelcentral {
+    width: 1200px;
+}
+
+.panelDerecho {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    flex-direction: column;
+    justify-content: center;
+    background-color: azure;
+    border: 2px solid #4c4c4c;
+    margin: 8px;
+    margin-left: 60px;
+    padding: 15px;
+    border-radius: 5px;  
+    width: 360px;
+    height: 600px;
+}
+
+.panelIzquierdo {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    flex-direction: column;
+    justify-content: center;
+    background-color: azure;
+    border: 2px solid #4c4c4c;
+    margin: 8px;
+    margin-right: 60px;
+    padding: 15px;
+    border-radius: 5px;  
+    width: 360px;
+    height: 600px;
+}
+
+.panelDerecho p,.panelIzquierdo p{
+    color: black;
+}
+
+.inventario {
+    
+}
+
+
+
