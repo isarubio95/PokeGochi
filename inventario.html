@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="inventario.css">
+    <script src="tamagochi.js"></script>
+</head>
+<body>
+    <div class="item">
+        <div id="cantidadLechuga"></div>
+        <img class="objeto" src="/imagenes/lechuga.png" alt="lechuga">  
+        <p>Lechuga</p>
+    </div>
+    <div class="item">
+        <div id="cantidadPan"></div>
+        <img class="objeto" src="/imagenes/pan.png" alt="pan">
+        <p>Pan</p>
+    </div>
+    <div class="item">
+        <div id="cantidadPollo"></div>
+        <img class="objeto" src="/imagenes/pollo.png" alt="pollo">
+        <p>Pollo</p>
+    </div>
+    <div class="item"> 
+        <div id="cantidadTernera"></div>
+        <img class="objeto" src="/imagenes/ternera.png" alt="ternera">
+        <p>Ternera</p>
+    </div> 
+    <script>
+        var cantidadLechuga = 5;
+        var cantidadPan = 5;
+        var cantidadPollo = 5;
+        var cantidadTernera = 5;
+
+        document.getElementById('cantidadLechuga').textContent = cantidadLechuga + "x";
+        document.getElementById('cantidadPan').textContent = cantidadPan + "x";
+        document.getElementById('cantidadPollo').textContent = cantidadPollo + "x";
+        document.getElementById('cantidadTernera').textContent = cantidadTernera + "x";
+    </script>
+</body>
+</html>

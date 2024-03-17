@@ -45,3 +45,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     setInterval(actualizarBaño, 1000); // Actualiza cada segundo
     setInterval(actualizarAburrimiento, 5000); // Actualiza cada segundo
 });
+
+var iframe = document.getElementById('inventario');
+var inventario = iframe.contentDocument || iframe.contentWindow.document;
+
+// Acceder a elementos dentro del iframe
+var elementoInterno = doc.getElementById('inventario');

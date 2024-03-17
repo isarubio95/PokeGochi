@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     margin-top: 40px;
     justify-content: center;
     text-align: center; /* Asegura que el texto también esté centrado*/
@@ -20,16 +20,18 @@ body {
     height: 55px; /* Alto del botón */ 
     margin: 25px; /* Margen alrededor del botón */
     font-size: large; /* Tamaño del texto */
-    background-color: #ffffff; /* Color de fondo */
-    color: #ff0000; /* Color del texto */
-    border: 2px solid rgb(0, 0, 0); /* Sin bordes */
+    background-color: #e7e7e7; /* Color de fondo */
+    color: #000000; /* Color del texto */
+    border: 2px solid rgb(5, 0, 156); /* Sin bordes */
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
     transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+    transition: transform 0.2s ease;
 }
 
 .boton:hover {
-    background-color: #edf3ef; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #d7dcd9; /* Cambia el color de fondo al pasar el mouse */
+    transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
 }
 
 .boton:active {
@@ -85,14 +87,14 @@ p {
     justify-content: flex-start; /* Alinea los elementos al inicio */
     flex-direction: column;
     justify-content: center;
-    background-color: azure;
-    border: 2px solid #4c4c4c;
+    background-color: #e7e7e7;
+    border: 2px solid #575656;
     margin: 8px;
     margin-left: 60px;
-    padding: 15px;
+    
     border-radius: 5px;  
-    width: 360px;
-    height: 600px;
+    width: 450px;
+    height: 750px;
 }
 
 .panelIzquierdo {
@@ -100,23 +102,25 @@ p {
     justify-content: flex-start; /* Alinea los elementos al inicio */
     flex-direction: column;
     justify-content: center;
-    background-color: azure;
+    background-color: #e7e7e7;
     border: 2px solid #4c4c4c;
     margin: 8px;
     margin-right: 60px;
-    padding: 15px;
+    padding: 30px;
     border-radius: 5px;  
-    width: 360px;
-    height: 600px;
+    width: 450px;
+    height: 750px;
 }
 
 .panelDerecho p,.panelIzquierdo p{
     color: black;
 }
 
-.inventario {
-    
+#inventario {
+    width: 100%;
+    height: 100%;
 }
+
 
 
 
